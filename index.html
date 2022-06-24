@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="300">
+
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="icon" type="imagem/png" href="./assets/icon.png" />
+        <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+
+        <title>ParrotCloud_</title>
+    </head>
+    <body>
+        <header id="header">
+            <area><a href="index.html"><img class="w3-image-logo w3-display-left" src="assets/logo.png" alt="ParrotCloud_"></a></area>
+            <br>
+            <br>
+            <div class="wrapper">
+                <span><form class="search" name="search" id="search" method="POST"> <input class="w3-input-searchbar w3-display-middle" type="search" style="width:45%" required name="search" placeholder="Search:"></form></span>
+                <br>
+                <span><a href="create_account.html"><img class="w3-image-bar" src="assets/New Games.png" alt="NEW GAMES"/></a></span>
+                <span><a href="create_account.html"><img class="w3-image-bar" src="assets/news and announcements.png" alt="NEWS"/></a></span> 
+                <span><a href="create_account.html"><img class="w3-image-bar" src="assets/Categories.png" alt="CATEGORIES"/></a></span>
+                <span><a href="create_account.html"><img class="w3-image-bar" src="assets/Awards.png" alt="AWARDS"/></a></span>
+                <span><a href="create_account.html"><img class="w3-image-bar" src="assets/Community.png" alt="EXPLORE"/></a></span>
+                <span><a href="create_account.html"><img class="w3-image-bar" src="assets/Explore.png" alt="EXPLORE"/></a></span>
+                <span><a href="signup.html"><img class="w3-image-signin" src="assets/Signin Up.png" alt="SIGNIN UP"/></a></span>
+                <span><a href="signin.html"><img class="w3-image-bar" src="assets/Login2.png" alt="LOGIN"/></a></span>
+            </div>
+        </header>
+
+        <div class="layout">
+            <div>
+                <br>
+                <br>
+                <div class="w3-container-gamedemo1"><a href="create_account.html"><img class="w3-image-game w3-display-middle" src="assets/game1.png.opdownload" alt="CELESTE"/></a></div>
+                <div class="w3-container-gamedemo2"><a href="create_account.html"><img class="w3-image-game w3-display-middle" src="assets/game1.png.opdownload" alt="STARDEW VALEY"/></a></div>
+                <div class="w3-container-gamedemo3"><a href="create_account.html"><img class="w3-image-game w3-display-middle" src="assets/game1.png.opdownload" alt="ISAAC"/></a></div>
+                <br>
+                <br>
+                <div class="w3-container-gamedemo4"><a href="create_account.html"><img class="w3-image-game w3-display-middle" src="assets/game1.png.opdownload" alt="CELESTE"/></a></div>
+                <div class="w3-container-gamedemo5"><a href="create_account.html"><img class="w3-image-game w3-display-middle" src="assets/game1.png.opdownload" alt="STARDEW VALEY"/></a></div>
+                <div class="w3-container-gamedemo6"><a href="create_account.html"><img class="w3-image-game w3-display-middle" src="assets/game1.png.opdownload" alt="ISAAC"/></a></div>
+                <br>
+            </div>
+        </div>
+        
+        <footer>
+            <p id="contato" class="footer-text">Copyrigth: © 2022 ParrotCloud. <br> 
+            <a class="w3-hypertext" href="parrotcloud_contact.html">Contact Us</a> || <a class="w3-hypertext" href="parrotcloud_about.html">About Us</a> <button class="w3-button-footer w3-display-right" id="btn" type="submit" value="Language" onclick="changeLanguagePt()">Languages</button></p>
+        </footer>
+
+        <script>
+            function changeLanguagePt(){
+                document.getElementById("search").placeholder=" Procurar:";
+                document.getElementById("contato").innerHTML = "Copyrigth: © 2022 ParrotCloud. <br> <a class='w3-hypertext' href='parrotcloud_contact.html'>Nossos Contatos</a> || <a class='w3-hypertext' href='parrotcloud_about.html'>Sobre Nós</a> <button class='w3-button-footer w3-display-right' id='btn' type='submit' value='Language' onclick='changeLanguageEn()'>Languages</button>";
+            }
+
+            function changeLanguageEn(){
+                document.getElementById("search").placeholder=" Search:";
+                document.getElementById("contato").innerHTML = "Copyrigth: © 2022 ParrotCloud. <br> <a class='w3-hypertext' href='parrotcloud_contact.html'>Contact Us</a> || <a class='w3-hypertext' href='parrotcloud_about.html'>About Us</a> <button class='w3-button-footer w3-display-right' id='btn' type='submit' value='Language' onclick='changeLanguagePt()'>Languages</button>";
+            } 
+        </script>
+    </body>
+</html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="300">
+
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="icon" type="imagem/png" href="./assets/icon.png" />
+        <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+
+        <title>ParrotCloud_</title>
+    </head>
+    <body>
+        <header id="header">
+            <area><a href="index.html"> <img class="w3-image-logo" src="assets/logo.png" alt="ParrotCloud_"/></a></area>
+        </header>
+
+        <br><br><br> <br><br><br>
+
+        <div class="layout">
+            <p class="w3-image-welcome w3-display-middle">
+                <img id="welcome" src="assets/welcome.png" alt="BEM VINDO"/><br>
+            </p>
+            <p class="w3-image-create w3-display-middle">
+                <img id="create" src="assets/createnow.png" alt="CREATE"/>
+            </p>
+    
+            <br><br><br><br>
+    
+            <div class="w3-container-signup w3-display-middle">
+                <form  method="POST" name="signup" id="cadastro">
+                    <lable id="signup">
+                        <br>	
+                        <input class="w3-input" type="email" style="width:70%" required name="email" placeholder="Email:">
+                        <br>
+                        <input class="w3-input" type="text" style="width:70%" required name="username" placeholder="Username:">
+                        <br>
+                        <input class="w3-input" type="password" style="width:70%" required name="psw1" placeholder="Password:">
+                        <br>
+                        <input class="w3-input" type="password" style="width:70%" required name="psw2" placeholder="Confirm Password:">
+                    </lable>
+                    <p id="termPolicy" class="w3-terms"><input type="checkbox"></input>
+                        By siging up, you agree to the <a class="w3-hypertext" href="terms_of_use.html">terms of use</a> and<br>our
+                        <a class="w3-hypertext" href="privacy-policy.html">privacy policy</a>, including our <a class="w3-hypertext" href="cookie-policy.html">cookie policy</a>    
+                    </p>
+                    <p id="btn2">
+                        <button class="w3-button" type="submit" value="subimit"> Sign Up </button>
+                    </p>
+                    <p id="termSignin" class="w3-terms">You already have an account?<a class="w3-hypertext" href="signin.html"> Sign In!</a>
+                    </p>
+                </form>
+            </div>
+        </div>
+
+        <footer>
+            <p id="contato" class="footer-text">Copyrigth: © 2022 ParrotCloud. <br> 
+            <a class="w3-hypertext" href="parrotcloud_contact.html">Contact Us</a> || <a class="w3-hypertext" href="parrotcloud_about.html">About Us</a> <button class="w3-button-footer w3-display-right" id="btn" type="submit" value="Language" onclick="changeLanguagePt()">Language</button></p>
+        </footer>
+
+        <script>
+            var email, user, psw1, psw2;
+            email = formsignup.email.value
+            username = formsignup.user_name.value
+            psw1 = formsignup.psw1.value
+            psw2 = formsignup.psw2.value
+
+            function signup() {
+                if (psw1 != psw2 && email !=="" && username !=="") { 
+                    alert("Erro na crição da conta, tente novamente");
+                }
+                else { 
+                    alert("Sua conta foi criada com sucesso");
+                }
+            }
+
+            function changeLanguagePt() {
+                document.getElementById("welcome").src='assets/welcome2.png';
+                document.getElementById("create").src='assets/createnow2.png';
+                document.getElementById("signup").innerHTML = "<br><input class='w3-input' type='email' style='width:70%' required name='email' placeholder='Email:'><br><input class='w3-input' type='text' style='width:70%' required name='username' placeholder='Nome de Usuário:'><br><input class='w3-input' type='password' style='width:70%' required name='psw1' placeholder='Senha:'><br><input class='w3-input' type='password' style='width:70%' required name='psw2' placeholder='Confirme Senha:'>";
+                document.getElementById("termPolicy").innerHTML = "<input type='checkbox'></input> Por subscrever, você concorda em nossos <a class='w3-hypertext' href='terms_of_use.html'>termos de uso</a>,<br>nossa <a class='w3-hypertext' href='privacy_policy.html'>política de privacidade</a> e nossa <a class='w3-hypertext' href='cookie-policy.html'>política de cookies</a>" ;
+                document.getElementById("btn2").innerHTML = "<button class='w3-button' type='submit' value='subimit'> Subscrever </button>";
+                document.getElementById("termSignin").innerHTML = "<p id='termSignin' class='w3-terms'>Já tem uma conta?<a class='w3-hypertext' href='signin.html'> Entre agora!</a>";
+                document.getElementById("contato").innerHTML = "Copyrigth: © 2022 ParrotCloud. <br> <a class='w3-hypertext' href='parrotcloud_contact.html'>Nossos Contatos</a> || <a class='w3-hypertext' href='parrotcloud_about.html'>Sobre Nós</a><button class='w3-button-footer w3-display-right' id='btn' type='submit' value='Language' onclick='changeLanguageEn()'>Language</button>";
+            } 
+
+            function changeLanguageEn() {
+                document.getElementById("welcome").src='assets/welcome.png';
+                document.getElementById("create").src='assets/createnow.png';
+                document.getElementById("signup").innerHTML = "<br><input class='w3-input' type='email' style='width:70%' required name='email' placeholder='Email:'><br><input class='w3-input' type='text' style='width:70%' required name='username' placeholder='Username:'><br><input class='w3-input' type='password' style='width:70%' required name='psw1' placeholder='Password:'><br><input class='w3-input' type='password' style='width:70%' required name='psw2' placeholder='Confirm Password:'>";
+                document.getElementById("termPolicy").innerHTML = "<input type='checkbox'></input> By siging up, you agree to the <a class='w3-hypertext' href='terms_of_use.html'>terms of use</a> and<br>our <a class='w3-hypertext' href='privacy_policy.html'>privacy policy</a>, including our <a class='w3-hypertext' href='cookie-policy.html'>cookie policy</a>" ;
+                document.getElementById("btn2").innerHTML = "<button class='w3-button' type='submit' value='subimit'> Sign Up </button>";
+                document.getElementById("termSignin").innerHTML = "<p id='termSignin' class='w3-terms'>You already have an account?<a class='w3-hypertext' href='signin.html'> Sign In!</a>";
+                document.getElementById("contato").innerHTML = "Copyrigth: © 2022 ParrotCloud. <br> <a class='w3-hypertext' href='parrotcloud_contact.html'>Contact Us</a> || <a class='w3-hypertext' href='parrotcloud_about.html'>About Us</a> <button class='w3-button-footer w3-display-right' id='btn' type='submit' value='Language' onclick='changeLanguagePt()'>Language</button>";
+            } 
+        </script>
+    </body>
+</html>

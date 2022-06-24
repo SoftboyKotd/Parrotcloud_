@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="300">
+
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="icon" type="imagem/png" href="./assets/icon.png" />
+        <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+
+        <title>ParrotCloud_</title>
+    </head>
+    <body>
+        <header id="header">
+            <area><a href="index.html"> <img class="w3-image-logo" src="assets/logo.png" alt="ParrotCloud_"/></a></area>
+        </header>
+
+        <div class="layout">
+            <img class="w3-image-message2 w3-display-middle" src="assets/why.png">
+            <br>
+            <area><a href="index.html"><button class="w3-button-footer w3-display-right" id="btn" type="submit" value="submit"></button></a></area>
+        </div>
+
+        <footer>
+            <p id="contato" class="footer-text">Copyrigth: © 2022 ParrotCloud. 
+            <br> 
+            <a class="w3-hypertext" href="parrotcloud_contact.html">Contact Us</a> || <a class="w3-hypertext" href="parrotcloud_about.html">About Us</a> <button class="w3-button-footer w3-display-right" id="btn" type="submit" value="Language" onclick="changeLanguagePt()">Languages</button></p>
+        </footer>
+
+        <script>
+            function changeLanguagePt(){
+                document.getElementById("search").placeholder=" Procurar:";
+                document.getElementById("contato").innerHTML = "Copyrigth: © 2022 ParrotCloud. <br> <a class='w3-hypertext' href='parrotcloud_contact.html'>Nossos Contatos</a> || <a class='w3-hypertext' href='parrotcloud_about.html'>Sobre Nós</a> <button class='w3-button-footer w3-display-right' id='btn' type='submit' value='Language' onclick='changeLanguageEn()'>Languages</button>";
+            }
+
+            function changeLanguageEn(){
+                document.getElementById("search").placeholder=" Search:";
+                document.getElementById("contato").innerHTML = "Copyrigth: © 2022 ParrotCloud. <br> <a class='w3-hypertext' href='parrotcloud_contact.html'>Contact Us</a> || <a class='w3-hypertext' href='parrotcloud_about.html'>About Us</a> <button class='w3-button-footer w3-display-right' id='btn' type='submit' value='Language' onclick='changeLanguagePt()'>Languages</button>";
+            } 
+        </script>
+    </body>
+</html>
