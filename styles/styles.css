@@ -11,33 +11,153 @@ header {
     background-color: #1b1b1b;
     box-shadow: 8px 8px 8px #0a0a0a;
     color: white;
-    z-index: 3;
+    z-index: 4;
 }
 
-div.layout {
-    z-index: 1;
-}
-
-p.welcome {
+/* The Modal (background) */
+.modal {
     position: absolute;
-    margin-top: -1cm;
-    margin-left: 14cm;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    border-radius: 8px 8px 8px 8px;
+    width: 700px;
+    height: 500px;
+    margin-top: 35px;
+    box-shadow: 8px 8px 8px #0a0a0a;
+    background-color: #262424;
+    z-index: 2; 
+}
+  
+/* The Close Button */
+.close {
+    color: #aaaaaa;
+    margin-right: 24px;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+  
+.close:hover,
+.close:focus {
+    color: #000000;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-p.w3-image-create {
-    margin-top: -275px;
-    margin-left: -400px;
-    max-width: 200px;
+div.w3-container-settings-showing {
+    float: left;
+    position: fixed;
+    border-radius: 2px 2px 2px 2px;
+    width: 580px;
+    margin-top: -100px;
+    margin-left: 0px;
+    height: 700px;
+    border: 5px solid #1b1b1b;
+    border-radius: 5px;
+    background-color: #1b1b1b;
+    box-shadow: 8px 8px 8px #141414;
+    font-size: 20px;
+    font-family: 'Frijole';
+    z-index: 6;
 }
 
-a.w3-bar-item {
-    font-size: 24px;
+div.w3-container-settings-hide {
+    float: left;
+    position: fixed;
+    border-radius: 2px 2px 2px 2px;
+    width: 580px;
+    margin-top: -100px;
+    margin-left: 0px;
+    height: 700px;
+    border: 5px solid #1b1b1b;
+    border-radius: 5px;
+    background-color: #1b1b1b;
+    box-shadow: 8px 8px 8px #141414;
+    font-size: 20px;
+    visibility: hidden ;
+    z-index: 6;
 }
 
-p.w3-image-welcome{
-    margin-top: -325px;
-    margin-left: -225px;
-    max-width: 200px;
+h6 {
+    float: left;
+    font-family: 'Frijole';
+    margin-left: 30px;
+    transition: 700ms;
+    color: white;
+}
+
+h6:hover {
+    cursor: pointer;
+    color: #69d300;
+    transform: scale(1.2);
+}
+
+h8 {
+    float: right;
+    font-family: 'Frijole';
+    margin-right: 70px;
+    transition: 700ms;
+    color: #69d300;
+}
+
+h2 {
+    position: fixed;
+    float: top;
+    font-family: 'Frijole'; 
+    text-align: center;
+    margin-left: 600px;
+    margin-top: -70px;
+}
+
+h8:hover {
+    cursor: pointer;
+    color: white;
+    transform: scale(1.2);
+}
+
+h1.w3-text-welcome {
+    position: fixed;
+    color: white;
+    margin-top: -375px;
+    font-family: 'Frijole';
+    transition: 1000ms;
+}
+
+h1.w3-text-create-popup {
+    text-align: center;
+    position: fixed;
+    color: white;
+    margin-top: -300px;
+    margin-left: 0px;
+    font-family: 'Frijole';
+    animation: movetext2 1s normal;
+}
+h1.w3-text-welcome-popup {
+    position: fixed;
+    color: white;
+    margin-top: -375px;
+    font-family: 'Frijole';
+    animation: movetext1 1s normal;
+}
+
+@keyframes movetext2 {
+    from {margin-top: -900px;}
+    to {margin-top: -300px;}
+  }
+ @keyframes movetext1 {
+   from {margin-top: -900px;}
+    to {margin-top: -375px;}
+  }
+
+
+h1.w3-text-create-popup {
+    text-align: center;
+    position: fixed;
+    color: white;
+    margin-top: -300px;
+    margin-left: 0px;
+    font-family: 'Frijole';
+    transition: 1000ms;
 }
 
 button.w3-button {
@@ -46,8 +166,9 @@ button.w3-button {
     padding-right: 32px;
     border-radius: 8px 8px 8px 8px;
     background-color: #69d300;
+    z-index: 2;
 }
-
+  
 div.w3-container-signup {
    position: absolute;
    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -58,7 +179,31 @@ div.w3-container-signup {
    margin-top: 35px;
    box-shadow: 8px 8px 8px #0a0a0a;
    background-color: #262424;
+   z-index: 2;
 }
+
+p.w3-text-login {
+    font-family: 'Frijole';
+    font-size: 24px;
+}
+
+div.w3-container-signup-popup {
+    position: absolute;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    border-radius: 8px 8px 8px 8px;
+    width: 700px;
+    height: 500px;
+    margin-top: 35px;
+    box-shadow: 8px 8px 8px #0a0a0a;
+    background-color: #262424;
+    animation: movesignup 1.5s normal;
+    z-index: 3;
+ }
+ @keyframes movesignup {
+    from {margin-top: 700px;}
+    to {margin-top: 35px;}
+  }
 
 div.w3-container-login {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -68,16 +213,7 @@ div.w3-container-login {
     height: 500px;
     box-shadow: 8px 8px 8px #141414;
     background-color: #262424;
-}
-
-div.w3-container-mainbar {
-    position: relative;
-    border-radius: 2px 2px 2px 2px;
-    width: 1000px;
-    height: 2000px;
-    margin-top: 1150px;
-    background-color: #434141;
-    z-index: 1;
+    z-index: 2;
 }
 
 div.w3-container-pagesbar {
@@ -90,94 +226,69 @@ div.w3-container-pagesbar {
     box-shadow: 2px 5px 2px #141414;
 }
 
-div.w3-container-gamedemo1 {
-    position: fixed;
+div.w3-container-gamedemo {
+    float: left;
+    position: relative;
     border-radius: 2px 2px 2px 2px;
     width: 600px;
+    margin-top: 30px;
+    margin-left: 70px;
     height: 350px;
-    margin-top: 150px;
-    margin-left: 60px;
     background-color: #232222;
+    transition: transform 250ms;
+    opacity: 1.0;
+    z-index: 2;
 }
 
-div.w3-container-gamedemo2 {
-    position: fixed;
-    border-radius: 2px 2px 2px 2px;
-    width: 600px;
-    height: 350px;
-    margin-top: 150px;
-    margin-left: 720px;
-    background-color: #232222;
+p.w3-text-settings{
+    margin-top: -50px;
+    color: #ffffff;
 }
 
-div.w3-container-gamedemo3 {
-    position: fixed;
-    border-radius: 2px 2px 2px 2px;
-    width: 600px;
-    height: 350px;
-    margin-top: 150px;
-    margin-left: 1380px;
-    background-color: #232222;
+p.w3-text-settings:hover{
+    cursor: pointer;
+    color: #69d300;
+}
+span
+
+
+a.w3-hypertext-logof{
+    text-decoration: none;
+
+    margin-right: 8px;
+    font-family: 'Future Friends', "Courier New", monospace;
+    font-size: 20px;
+    color: #ffffff;
 }
 
-div.w3-container-gamedemo4 {
-    position: fixed;
-    border-radius: 2px 2px 2px 2px;
-    width: 600px;
-    height: 350px;
-    margin-top: 600px;
-    margin-left: 60px;
-    background-color: #232222;
+a.w3-hypertext-settings{
+    text-decoration: none;
 }
 
-div.w3-container-gamedemo5 {
-    position: fixed;
-    border-radius: 2px 2px 2px 2px;
-    width: 600px;
-    height: 350px;
-    margin-top: 600px;
-    margin-left: 720px;
-    background-color: #232222;
+a.w3-hypertext-logof:hover{
+    cursor: pointer;
+    color: #f90000;
 }
 
-div.w3-container-gamedemo6 {
-    position: fixed;
-    border-radius: 2px 2px 2px 2px;
-    width: 600px;
-    height: 350px;
-    margin-top: 600px;
-    margin-left: 1380px;
-    background-color: #232222;
+button.w3-button-hamburguer {
+    background-color: #1b1b1b;
+    color: #ffffff;
+    border: none;
+    margin-left: 24px;
+    opacity: 0.7;
+    transition: 700ms;
 }
 
-div.w3-container-gamedemo1:hover {
+button.w3-button-hamburguer:hover {
+    cursor: pointer;
+    opacity: 1.0;
+}
+
+div.w3-container-gamedemo:hover {
     cursor: pointer;
     box-shadow:8px 8px 8px #51a003;
-}
-
-div.w3-container-gamedemo2:hover {
-    cursor: pointer;
-    box-shadow:8px 8px 8px #51a003;
-}
-
-div.w3-container-gamedemo3:hover {
-    cursor: pointer;
-    box-shadow:8px 8px 8px #51a003;
-}
-
-div.w3-container-gamedemo4:hover {
-    cursor: pointer;
-    box-shadow:8px 8px 8px #51a003;
-}
-
-div.w3-container-gamedemo5:hover {
-    cursor: pointer;
-    box-shadow:8px 8px 8px #51a003;
-}
-
-div.w3-container-gamedemo6:hover {
-    cursor: pointer;
-    box-shadow:8px 8px 8px #51a003;
+    transform: scale(1.05);
+    opacity: 0.5;
 }
 
 img.w3-image-logo {
@@ -192,44 +303,9 @@ img.w3-image-message {
     margin-top: -300px;
 }
 
-img.w3-image-signin {
-    float: top;
-    max-height: 60px;
-    margin-top: 13px;
-    margin-left: 500px;
-    opacity: 0.8;
-}
-
-img.w3-image-signin:hover {
-    cursor: pointer;
-    opacity: 1.0;
-}
-
-img.w3-image-bar {
-    float: top;
-    margin-top: 13px;
-    margin-left: 30px;
-    opacity: 0.8;
-}
-
-img.w3-image-bar2 {
-    float: top;
-    opacity: 0.8;
-}
-
-img.w3-image-bar2:hover{
-    cursor: pointer;
-    opacity: 1.0;
-}
-
-img.w3-image-bar:hover{
-    cursor: pointer;
-    opacity: 1.0;
-}
-
 img.w3-image-game {
-   max-width: 350px;
-   height: 200px;
+   max-width: 600px;
+   height: 350px;
    opacity: 0.5;
 }
 
@@ -246,7 +322,13 @@ input.w3-input-searchbar {
     height: 30px;
     outline: none;
     border: 0px;
- }
+}
+
+input.w3-input-searchbar:hover {
+    cursor: pointer;
+    background-color: #666565;
+}
+
 
 input.w3-input {
     width: 50px;
@@ -289,9 +371,10 @@ footer {
     width: 100%;
     background-color: #1b1b1b;
     color: white;
-    font-size: 14px;
+    font-size: 11px;
+    box-shadow:8px 8px 8px 12px #141414;
     text-align: center;
-    z-index: 3;
+    z-index: 4;
 }
 
 button.w3-button-footer {

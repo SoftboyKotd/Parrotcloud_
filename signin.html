@@ -1,46 +1,45 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
+        <title>ParrotCloud_</title>
+
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="refresh" content="300">
 
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" type="imagem/png" href="./assets/icon.png" />
         <link rel="stylesheet" type="text/css" href="./styles/styles.css">
-
-        <title>ParrotCloud_</title>
+        <link rel="stylesheet" type="text/css" href="./styles/fonts.css">
+        
     </head>
     <body>
-        <header id="header">
-            <area><a href="index.html"><img class="w3-image-logo" src="assets/logo.png" alt="ParrotCloud_"/></a></area>
+        <header style="height: 60px;" id="header">
+            <area><a href="index.html"><img class="w3-image-logo w3-display-left" src="assets/logo.png" alt="ParrotCloud_"/></a></area>
         </header>
 
         <br><br><br> <br><br><br>
 
-        <div class="layout">
-            <div class="w3-container-login w3-display-middle">
-                <form method="POST" name="signin" id="signin">
-                    <lable id="signin">
-                        <br>
-                        <p class="login" id="login">
-                            <img src="assets/login.png" class="w3-image-login" alt="login" style="max-width: 2000px;"/>
-                        </p>
-                        <br><br>			
-                        <input class="w3-input" type="text" style="width:70%" required name="username" placeholder="Username:">
-                        <br>
-                        <input class="w3-input" type="password" style="width:70%" required name="psw" placeholder="Password:">
-                        <br>
-                    </lable>
-                    <p>
-                        <button class="w3-button" type="submit" value="subimit"> Log In </button>
-                    </p>
-                    <p class="w3-terms">
-                        Forgot your password? <a class="w3-hypertext" href="psw_recall.html">Try This!</a> 
-                    </p>
-                </form>
-            </div>
+        <div class="w3-container-login w3-display-middle">
+            <form method="POST" name="signin" id="signin">
+                <lable id="signin">
+                    <br>
+                    <p class="w3-text-login">Login</p>
+                    <br><br>			
+                    <input class="w3-input" type="text" style="width:70%" required name="username" placeholder="Username:">
+                    <br>
+                    <input class="w3-input" type="password" style="width:70%" required name="psw" placeholder="Password:">
+                    <br>
+                </lable>
+                <p>
+                    <button class="w3-button" type="submit" value="subimit"> Log In </button>
+                </p>
+                <p class="w3-terms">
+                    Forgot your password? <a class="w3-hypertext" href="psw_recall.html">Try This!</a> 
+                </p>
+            </form>
         </div>
 
         <footer>
@@ -50,7 +49,7 @@
 
         <script>
             function changeLanguagePt(){
-                document.getElementById("contato").innerHTML = "Copyrigth: © 2022 ParrotCloud. <br> <a class='w3-hypertext' href='parrotcloud_contact.html'>Nossos Contatos</a> || <a class='w3-hypertext' href='parrotcloud_about.html'>Sobre Nós</a><button class='w3-button-footer w3-display-right' id='btn' type='submit' value='Language' onclick='changeLanguageEn()'>Language</button>";
+                document.getElementById("contato").innerHTML = "Copyrigth: © 2022 ParrotCloud. <br> <a class='w3-hypertext' href='parrotcloud_contact.html'>Contacte-nos</a> || <a class='w3-hypertext' href='parrotcloud_about.html'>Sobre Nós</a> <button class='w3-button-footer w3-display-right' id='btn' type='submit' value='Language' onclick='changeLanguageEn()'>Languages</button>";
             } 
 
             function changeLanguageEn(){
