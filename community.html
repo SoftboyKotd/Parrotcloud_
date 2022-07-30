@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+        <title>ParrotCloud_</title>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="300">
+
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="imagem/png" href="./assets/icon.png" />
+        <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+        <link rel="stylesheet" type="text/css" href="./styles/core.css">
+        <link rel="stylesheet" type="text/css" href="./styles/fonts.css">
+
+    </head>
+    <body>
+        <header id="header">
+
+            <div>
+
+                <button class="w3-button-hamburguer fa fa-bars w3-xlarge w3-display-left" onclick="openSettings()"></button>        
+
+            </div>
+
+            <br><br>
+
+            <table class="wrapper">
+
+                <span>
+
+                    <form class="search" name="search" id="search" method="POST">
+
+                        <input class="w3-input-searchbar w3-display-middle w3-auto" type="search" style="width:45%" required name="search" placeholder="Search:">
+
+                    </form>
+
+                </span>
+
+                <br>
+
+                <div class="w3-container-user w3-display-right">
+                    <p class="w3-text-profile">user_name</p>
+                    <a href="your_profile.html">
+    
+                        <img class="w3-image-profile w3-display-topright" src="assets/user_icon.jpg" alt="YOU"/>
+    
+                    </a>
+                </div>
+            </table>
+            
+            <span class="pages">
+
+                <div class="w3-container-pages w3-display">
+
+                    <div class="w3-text-pages">Home</div>
+
+                </div>
+                <div class="w3-container-pages">
+
+                    <div class="w3-text-pages">Community</div>
+
+                </div>
+                <div class="w3-container-pages w3-display">
+
+                    <div class="w3-text-pages">News</div>
+
+                </div>
+                <div class="w3-container-pages w3-display">
+
+                    <div class="w3-text-pages">Trending</div>
+
+                </div>
+                <div class="w3-container-pages w3-display">
+
+                    <div class="w3-text-pages">Explore</div>
+
+                </div>
+                <div class="w3-container-pages w3-display">
+
+                    <div class="w3-text-pages">More</div>
+
+                </div>
+            </span>
+        </header>
+
+        <br><br><br><br><br>
+
+        <nav class="w3-community w3-display-middle" style="width: 100%; height: 75%; margin-top: 5rem;">
+            <div class="community-main w3-display-tomiddle">
+                <div class="w3-conatiner-communityMainbar w3-display-topmiddle" style="z-index: 3;">
+                    <span>
+                        <div class="w3-container-communitypages" style="background-color: #141414;">
+                            <div class="w3-container-greenbar w3-display-bottomleft" style="background-color: #69d300; width: 25%; height: 2%; z-index: 2; opacity: 1;"></div>
+                            <div class="w3-text-pages" style="margin-top: 1rem; font-size: 13px; font-family: 'Press Start 2P';">
+                                Discussions
+                            </div>
+                        </div>
+                        <div class="w3-container-communitypages">
+                            <div class="w3-text-pages" style="margin-top: 1rem; font-size: 13px; font-family: 'Press Start 2P'; opacity: 0.75;">Chats</div>
+                        </div>
+                        <div class="w3-container-communitypages">
+                            <div class="w3-text-pages" style="margin-top: 1rem; font-size: 13px; font-family: 'Press Start 2P'; opacity: 0.75;">Groups</div>
+                        </div>
+                        <div class="w3-container-communitypages">
+                            <div class="w3-text-pages" style="margin-top: 1rem; font-size: 13px; font-family: 'Press Start 2P'; opacity: 0.75;">Images</div>
+                        </div>
+                    </span>
+                    <nav class="w3-container-communityscroll w3-display-topmiddle" style="width: 100%; height: 75%; margin-top: 80px; z-index: 1;">
+                        <div class="w3-container-post w3-display-topmiddle">
+                            <p class="w3-text w3-display-middle" style="width: 100%; margin-top: 0px; z-index: 4;">Looks like there isn't any discussion.<br>
+                                <a class="w3-hypertext-blink" style="font-size: 20px;">PUBLISH YOURSELF!</a></p>
+
+                                <div class="addpost" onclick="addPost()">
+                                    <button class="w3-button-post w3-display-right fa fa-plus-circle"></button>
+                                </div>
+                        </div>
+                        </div>
+                    </nav>
+                </div>
+          </div>
+        <div class="w3-container-leftsome w3-display-top" style="font-family: 'Press Start 2P'; color: azure; font-size: larger; position: sticky;">
+            Your Content
+            <br><br>
+            <a class="w3-hypertext" style="font-size: 16px;">
+                ° Profile 
+            </a>
+            <br><br>
+            <a class="w3-hypertext" style="font-size: 16px;">
+                ° Messages 
+            </a>
+            <br><br>
+            <a class="w3-hypertext-blink" style="font-size: 16px;">
+                ° Notice  
+            </a>
+            <br><br>
+            <a class="w3-hypertext" style="font-size: 16px;">
+                ° Games  
+            </a>
+            <br><br>
+            <a class="w3-hypertext" style="font-size: 16px;">
+                ° Lists 
+            </a>
+            <br><br>
+            <a class="w3-hypertext" style="font-size: 16px;">
+                ° Settigns 
+            </a>
+            <br><br>
+            Communities
+            <br><br>
+            <a class="w3-hypertext" style="font-size: 16px;">
+                ° Unity dev  
+            </a>
+            <br><br>
+            <a class="w3-hypertext" style="font-size: 16px;">
+                ° 2D  
+            </a>
+            <br><br>
+            <a class="w3-hypertext" style="font-size: 16px;">
+                ° RPG maker 
+            </a>
+            <br><br>
+            <a class="w3-hypertext" style="font-size: 16px;">
+                ° Html5 games 
+            </a>
+            <br><br>
+        </a>
+        Events
+        <br><br>
+        <a class="w3-hypertext" style="font-size: 16px;">
+            ° 48h GamJam  
+        </a>
+        <br><br>
+        <a class="w3-hypertext" style="font-size: 16px;">
+            ° SpeedrunEvent  
+        </a>
+        <br><br>
+        <a class="w3-hypertext" style="font-size: 16px;">
+            ° HorrorJam 
+        </a>
+        <br><br>
+        <a class="w3-hypertext" style="font-size: 16px;">
+            ° GameAward 
+        </a>
+
+        </div>
+    </nav>
+        
+
+        <footer>
+            <p id="contato" class="footer-text">Copyrigth: © 2022 ParrotCloud. <br> 
+            <a class="w3-hypertext" href="parrotcloud_contact.html">Contact Us</a> || <a class="w3-hypertext" href="parrotcloud_about.html">About Us</a> <button class="w3-button-footer w3-display-right" id="btn" type="submit" value="Language" onclick="changeLanguagePt()">Languages</button></p>
+        </footer>
+    </body>
+</html>

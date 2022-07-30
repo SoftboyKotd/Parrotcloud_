@@ -18,15 +18,16 @@
 
     </head>
     <body>
-        <header class="w3-container-header" id="header">
+        <header id="header">
 
             <div class="dropdown">
 
-                <button class="w3-button-hamburguer fa fa-bars w3-xlarge w3-display-left" onclick="openSettings()"></button>                   
+                <button class="w3-button-hamburguer fa fa-bars w3-xlarge w3-display-left" onclick="openSettings()"></button>        
                 </div>
             </div>
-            <br>
-            <br>
+
+            <br><br>
+
             <table class="wrapper">
 
                 <span>
@@ -41,15 +42,17 @@
 
                 <br>
 
-                <p class="w3-text login w3-display-right" style="margin-top: 20px;">
-                    <a  href="signin.html" class="w3-hypertext">Login</a><a  href="signup.html" class="w3-hypertext" style="margin-left: 20px;">Signup</a>
-                </p> 
-
-                </a>
+                <div class="w3-container-user w3-display-right">
+                    <p class="w3-text-profile">user_name</p>
+                    <a href="your_profile.html">
+    
+                        <img class="w3-image-profile w3-display-topright" src="assets/user_icon.jpg" alt="YOU"/>
+    
+                    </a>
+                </div>
             </table>
             
             <span class="pages">
-                <a class="w3-hypertext-settings" id="myBtn">
 
                 <div class="w3-container-pages w3-display">
 
@@ -58,7 +61,7 @@
                 </div>
                 <div class="w3-container-pages">
 
-                    <div class="w3-text-pages">Community</div>
+                    <div class="w3-text-pages"><a href="community.html">Community</a></div>
 
                 </div>
                 <div class="w3-container-pages w3-display">
@@ -81,630 +84,497 @@
                     <div class="w3-text-pages">More</div>
 
                 </div>
-                </a>
 
             </span>
         </header>
-        <br><br>
-        </div>
 
-        <div id="myModal" class="w3-modal w3-display-middle">
+        <br><br><br><br><br><br>
 
-            <h1 class="w3-text-welcome-popup w3-display-middle"> You don't Have an Account?</h1><br>
-            <h1 class="w3-text-create-popup w3-display-middle"> Create your Profile to Start Exploring!</h1>
-            <span class="close">&times;</span>
-            <div class="w3-container-signup-popup w3-display-middle">
-                <br>
-                <form  method="POST" name="signup" id="cadastro">
-                    <lable id="signup">
+        <nav>
 
-                        <br>	
-                        <input class="w3-input" type="email" style="width:70%" required name="email" placeholder="Email:">
-                        <br>
-                        <input class="w3-input" type="text" style="width:70%" required name="username" placeholder="Username:">
-                        <br>
-                        <input class="w3-input" type="password" style="width:70%" required name="psw1" placeholder="Password:">
-                        <br>
-                        <input class="w3-input" type="password" style="width:70%" required name="psw2" placeholder="Confirm Password:">
-
-                    </lable>
-                    <p id="termPolicy" class="w3-text"><input type="checkbox"></input>
-
-                        By siging up, you agree to the <a class="w3-hypertext" href="terms_of_use.html">terms of use</a> and<br>our
-                        <a class="w3-hypertext" href="privacy-policy.html">privacy policy</a>, including our <a class="w3-hypertext" href="cookie-policy.html">cookie policy</a>   
-                    </p>
-                </form>
-                <div class="w3-container-user">
-                    <a href="indexlogin.html"><button class="w3-button"> Sign Up </button></a>
-                </div>
-
-
-                <p id="termSignin" class="w3-text">You already have an account?<a class="w3-hypertext" href="signin.html"> Sign In!</a>
-                </p>
-            </div>
-            </div>
-        </div>         
-        <br><br><br><br>         
-        <div class="games">
-            <div class="w3-container-gamedemo">
-
-                <img class="w3-image-game2 w3-"  src="assets/Bloodborn.jpg" alt="GAME"/></a>
-                <img class="w3-image-locker w3-display-middle" src="assets/lock.png" style="z-index: 6; max-width: 100px;">
-                <div class="w3-container-details w3-display-bottommiddle">
-
-                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
-
-                    <div class="w3-container-price w3-display-middle">
-
-                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
-
-                        <div class="w3-container-promo w3-display-left">
-
-                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="w3-container-gamedemo">
-
-                <img class="w3-image-game2 w3-" src="assets/celeste.jpg" alt="GAME"/></a>
-                <img class="w3-image-locker w3-display-middle" src="assets/lock.png" style="z-index: 7; max-width: 100px;">
-                <div class="w3-container-details w3-display-bottommiddle">
-
-                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
-
-                    <div class="w3-container-price w3-display-middle">
-
-                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
-
-                        <div class="w3-container-promo w3-display-left">
-
-                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="w3-container-gamedemo">
-
-                <img class="w3-image-game2 w3-" src="assets/hollow.jpg" alt="GAME"/></a>
-                <img class="w3-image-locker w3-display-middle" src="assets/lock.png" style="z-index: 7; max-width: 100px;">
-                <div class="w3-container-details w3-display-bottommiddle">
-
-                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
-
-                    <div class="w3-container-price w3-display-middle">
-
-                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
-
-                        <div class="w3-container-promo w3-display-left">
-
-                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="w3-container-gamedemo">
-
-                <img class="w3-image-game2 w3-" src="assets/formula1.png" alt="GAME"/></a>
-                <img class="w3-image-locker w3-display-middle" src="assets/lock.png" style="z-index: 7; max-width: 100px;">
-                <div class="w3-container-details w3-display-bottommiddle">
-
-                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
-
-                    <div class="w3-container-price w3-display-middle">
-
-                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
-
-                        <div class="w3-container-promo w3-display-left">
-
-                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="w3-container-gamedemo">
-
-                <img class="w3-image-game2 w3-" src="assets/gta5.jpg" alt="GAME"/></a>
-                <img class="w3-image-locker w3-display-middle" src="assets/lock.png" style="z-index: 7; max-width: 100px;">
-                <div class="w3-container-details w3-display-bottommiddle">
-
-                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
-
-                    <div class="w3-container-price w3-display-middle">
-
-                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
-
-                        <div class="w3-container-promo w3-display-left">
-
-                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="w3-container-gamedemo">
-
-                <img class="w3-image-game2 w3-" src="assets/minecraft.jpg" alt="GAME"/></a>
-                <img class="w3-image-locker w3-display-middle" src="assets/lock.png" style="z-index: 7; max-width: 100px;">
-                <div class="w3-container-details w3-display-bottommiddle">
-
-                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
-
-                    <div class="w3-container-price w3-display-middle">
-
-                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
-
-                        <div class="w3-container-promo w3-display-left">
-
-                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="w3-container-gamedemo">
-
-                <img class="w3-image-game2 w3-" src="assets/Phasmophobia.jpg" alt="GAME"/></a>
-                <img class="w3-image-locker w3-display-middle" src="assets/lock.png" style="z-index: 7; max-width: 100px;">
-                <div class="w3-container-details w3-display-bottommiddle">
-
-                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
-
-                    <div class="w3-container-price w3-display-middle">
-
-                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
-
-                        <div class="w3-container-promo w3-display-left">
-
-                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="w3-container-gamedemo">
-
-                <img class="w3-image-game2 w3-" src="assets/metalgearR.jpg" alt="GAME"/></a>
-                <img class="w3-image-locker w3-display-middle" src="assets/lock.png" style="z-index: 7; max-width: 100px;">
-                <div class="w3-container-details w3-display-bottommiddle">
-
-                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
-
-                    <div class="w3-container-price w3-display-middle">
-
-                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
-
-                        <div class="w3-container-promo w3-display-left">
-
-                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="w3-container-gamedemo">
-
-                <img class="w3-image-game2 w3-" src="assets/gow.jpg" alt="GAME"/></a>
-                <img class="w3-image-locker w3-display-middle" src="assets/lock.png" style="z-index: 7; max-width: 100px;">
-                <div class="w3-container-details w3-display-bottommiddle">
-
-                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
-
-                    <div class="w3-container-price w3-display-middle">
-
-                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
-
-                        <div class="w3-container-promo w3-display-left">
-
-                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="w3-container-gamedemo">
-
-                <img class="w3-image-game2 w3-" src="assets/hades.png" alt="GAME"/></a>
-                <img class="w3-image-locker w3-display-middle" src="assets/lock.png" style="z-index: 7; max-width: 100px;">
-                <div class="w3-container-details w3-display-bottommiddle">
-
-                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
-
-                    <div class="w3-container-price w3-display-middle">
-
-                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
-
-                        <div class="w3-container-promo w3-display-left">
-
-                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="w3-container-gamedemo">
-
-                <img class="w3-image-game2 w3-" src="assets/katana.avif" alt="GAME"/></a>
-                <img class="w3-image-locker w3-display-middle" src="assets/lock.png" style="z-index: 7; max-width: 100px;">
-                <div class="w3-container-details w3-display-bottommiddle">
-
-                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
-
-                    <div class="w3-container-price w3-display-middle">
-
-                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
-
-                        <div class="w3-container-promo w3-display-left">
-
-                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="w3-container-gamedemo">
-
-                <img class="w3-image-game2 w3-" src="assets/Bloodborn.jpg" alt="GAME"/></a>
-                <img class="w3-image-locker w3-display-middle" src="assets/lock.png" style="z-index: 7; max-width: 100px;">
-                <div class="w3-container-details w3-display-bottommiddle">
-
-                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
-
-                    <div class="w3-container-price w3-display-middle">
-
-                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
-
-                        <div class="w3-container-promo w3-display-left">
-
-                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="w3-container-gamedemo">
-
-                <img class="w3-image-game2 w3-" src="assets/cuphead.jpeg" alt="GAME"/></a>
-                <img class="w3-image-locker w3-display-middle" src="assets/lock.png" style="z-index: 7; max-width: 100px;">
-                <div class="w3-container-details w3-display-bottommiddle">
-
-                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
-
-                    <div class="w3-container-price w3-display-middle">
-
-                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
-
-                        <div class="w3-container-promo w3-display-left">
-
-                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="w3-container-gamedemo">
-
-                <img class="w3-image-game2 w3-"  src="assets/Bloodborn.jpg" alt="GAME"/></a>
-                <img class="w3-image-locker w3-display-middle" src="assets/lock.png" style="z-index: 6; max-width: 100px;">
-                <div class="w3-container-details w3-display-bottommiddle">
-
-                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
-
-                    <div class="w3-container-price w3-display-middle">
-
-                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
-
-                        <div class="w3-container-promo w3-display-left">
-
-                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="w3-container-gamedemo">
-
-                <img class="w3-image-game2 w3-" src="assets/celeste.jpg" alt="GAME"/></a>
-                <img class="w3-image-locker w3-display-middle" src="assets/lock.png" style="z-index: 7; max-width: 100px;">
-                <div class="w3-container-details w3-display-bottommiddle">
-
-                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
-
-                    <div class="w3-container-price w3-display-middle">
-
-                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
-
-                        <div class="w3-container-promo w3-display-left">
-
-                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="w3-container-gamedemo">
-
-                <img class="w3-image-game2 w3-" src="assets/hollow.jpg" alt="GAME"/></a>
-                <img class="w3-image-locker w3-display-middle" src="assets/lock.png" style="z-index: 7; max-width: 100px;">
-                <div class="w3-container-details w3-display-bottommiddle">
-
-                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
-
-                    <div class="w3-container-price w3-display-middle">
-
-                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
-
-                        <div class="w3-container-promo w3-display-left">
-
-                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="w3-container-gamedemo">
-
-                <img class="w3-image-game2 w3-" src="assets/formula1.png" alt="GAME"/></a>
-                <img class="w3-image-locker w3-display-middle" src="assets/lock.png" style="z-index: 7; max-width: 100px;">
-                <div class="w3-container-details w3-display-bottommiddle">
-
-                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
-
-                    <div class="w3-container-price w3-display-middle">
-
-                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
-
-                        <div class="w3-container-promo w3-display-left">
-
-                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="w3-container-gamedemo">
-
-                <img class="w3-image-game2 w3-" src="assets/gta5.jpg" alt="GAME"/></a>
-                <img class="w3-image-locker w3-display-middle" src="assets/lock.png" style="z-index: 7; max-width: 100px;">
-                <div class="w3-container-details w3-display-bottommiddle">
-
-                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
-
-                    <div class="w3-container-price w3-display-middle">
-
-                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
-
-                        <div class="w3-container-promo w3-display-left">
-
-                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="w3-container-gamedemo">
-
-                <img class="w3-image-game2 w3-" src="assets/minecraft.jpg" alt="GAME"/></a>
-                <img class="w3-image-locker w3-display-middle" src="assets/lock.png" style="z-index: 7; max-width: 100px;">
-                <div class="w3-container-details w3-display-bottommiddle">
-
-                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
-
-                    <div class="w3-container-price w3-display-middle">
-
-                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
-
-                        <div class="w3-container-promo w3-display-left">
-
-                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="w3-container-gamedemo">
-
-                <img class="w3-image-game2 w3-" src="assets/Phasmophobia.jpg" alt="GAME"/></a>
-                <img class="w3-image-locker w3-display-middle" src="assets/lock.png" style="z-index: 7; max-width: 100px;">
-                <div class="w3-container-details w3-display-bottommiddle">
-
-                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
-
-                    <div class="w3-container-price w3-display-middle">
-
-                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
-
-                        <div class="w3-container-promo w3-display-left">
-
-                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="w3-container-gamedemo">
-
-                <img class="w3-image-game2 w3-" src="assets/metalgearR.jpg" alt="GAME"/></a>
-                <img class="w3-image-locker w3-display-middle" src="assets/lock.png" style="z-index: 7; max-width: 100px;">
-                <div class="w3-container-details w3-display-bottommiddle">
-
-                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
-
-                    <div class="w3-container-price w3-display-middle">
-
-                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
-
-                        <div class="w3-container-promo w3-display-left">
-
-                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="w3-container-gamedemo">
-
-                <img class="w3-image-game2 w3-" src="assets/gow.jpg" alt="GAME"/></a>
-                <img class="w3-image-locker w3-display-middle" src="assets/lock.png" style="z-index: 7; max-width: 100px;">
-                <div class="w3-container-details w3-display-bottommiddle">
-
-                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
-
-                    <div class="w3-container-price w3-display-middle">
-
-                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
-
-                        <div class="w3-container-promo w3-display-left">
-
-                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="w3-container-gamedemo">
-
-                <img class="w3-image-game2 w3-" src="assets/hades.png" alt="GAME"/></a>
-                <img class="w3-image-locker w3-display-middle" src="assets/lock.png" style="z-index: 7; max-width: 100px;">
-                <div class="w3-container-details w3-display-bottommiddle">
-
-                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
-
-                    <div class="w3-container-price w3-display-middle">
-
-                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
-
-                        <div class="w3-container-promo w3-display-left">
-
-                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="w3-container-gamedemo">
-
-                <img class="w3-image-game2 w3-" src="assets/katana.avif" alt="GAME"/></a>
-                <img class="w3-image-locker w3-display-middle" src="assets/lock.png" style="z-index: 7; max-width: 100px;">
-                <div class="w3-container-details w3-display-bottommiddle">
-
-                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
-
-                    <div class="w3-container-price w3-display-middle">
-
-                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
-
-                        <div class="w3-container-promo w3-display-left">
-
-                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="w3-container-gamedemo">
-
-                <img class="w3-image-game2 w3-" src="assets/Bloodborn.jpg" alt="GAME"/></a>
-                <img class="w3-image-locker w3-display-middle" src="assets/lock.png" style="z-index: 7; max-width: 100px;">
-                <div class="w3-container-details w3-display-bottommiddle">
-
-                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
-
-                    <div class="w3-container-price w3-display-middle">
-
-                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
-
-                        <div class="w3-container-promo w3-display-left">
-
-                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="w3-container-gamedemo">
-
-                <img class="w3-image-game2 w3-" src="assets/cuphead.jpeg" alt="GAME"/></a>
-                <img class="w3-image-locker w3-display-middle" src="assets/lock.png" style="z-index: 7; max-width: 100px;">
-                <div class="w3-container-details w3-display-bottommiddle">
-
-                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
-
-                    <div class="w3-container-price w3-display-middle">
-
-                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
-
-                        <div class="w3-container-promo w3-display-left">
-
-                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            <div class="w3-container-gamedemo">
-
-                <img class="w3-image-game2" src="assets/Bloodborn.jpg" alt="GAME"/></a>
-                <img class="w3-image-locker w3-display-middle" src="assets/lock.png" style="z-index: 7; max-width: 100px;">
-                <div class="w3-container-details w3-display-bottommiddle">
-
-                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
-
-                    <div class="w3-container-price w3-display-middle">
-
-                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
-
-                        <div class="w3-container-promo w3-display-left">
-
-                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
-
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-            </a>
-        </div>
-
+            <div class="w3-container-gamedemo2">
         
+                <img class="w3-image-game" src="assets/Bloodborn.jpg" alt="GAME"/></a>
+                <div class="w3-container-details w3-display-bottommiddle">
 
-        <footer>
-            <p id="contato" class="footer-text">Copyrigth: © 2022 ParrotCloud. <br> 
-            <a class="w3-hypertext" href="parrotcloud_contact.html">Contact Us</a> || <a class="w3-hypertext" href="parrotcloud_about.html">About Us</a> <button class="w3-button-footer w3-display-right" id="btn" type="submit" value="Language" onclick="changeLanguagePt()">Languages</button></p>
+                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
+
+                    <div class="w3-container-price w3-display-middle">
+
+                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
+
+                        <div class="w3-container-promo w3-display-left">
+
+                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="flex-container">
+            <div class="w3-container-gamedemo2">
+
+                <img class="w3-image-game" src="assets/celeste.jpg" alt="GAME"/>
+
+                <div class="w3-container-details w3-display-bottommiddle">
+
+                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
+
+                    <div class="w3-container-price w3-display-middle">
+
+                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
+
+                        <div class="w3-container-promo w3-display-left">
+
+                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="games">
+            <div class="w3-container-gamedemo2">
+
+                <img class="w3-image-game" src="assets/hollow.jpg" alt="GAME"/>
+                <div class="w3-container-details w3-display-bottommiddle">
+
+                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
+
+                    <div class="w3-container-price w3-display-middle">
+
+                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
+
+                        <div class="w3-container-promo w3-display-left">
+
+                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="w3-container-gamedemo2">
+
+                <img class="w3-image-game" src="assets/formula1.png" alt="GAME"/><div class="w3-container-details w3-display-bottommiddle">
+
+                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
+
+                    <div class="w3-container-price w3-display-middle">
+
+                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
+
+                        <div class="w3-container-promo w3-display-left">
+
+                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="w3-container-gamedemo2">
+
+                <img class="w3-image-game" src="assets/gta5.jpg" alt="GAME"/><div class="w3-container-details w3-display-bottommiddle">
+
+                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
+
+                    <div class="w3-container-price w3-display-middle">
+
+                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
+
+                        <div class="w3-container-promo w3-display-left">
+
+                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="w3-container-gamedemo2">
+
+                <img class="w3-image-game" src="assets/minecraft.jpg" alt="GAME"/><div class="w3-container-details w3-display-bottommiddle">
+
+                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
+
+                    <div class="w3-container-price w3-display-middle">
+
+                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
+
+                        <div class="w3-container-promo w3-display-left">
+
+                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="w3-container-gamedemo2">
+
+                <img class="w3-image-game" src="assets/Phasmophobia.jpg" alt="GAME"/><div class="w3-container-details w3-display-bottommiddle">
+
+                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
+
+                    <div class="w3-container-price w3-display-middle">
+
+                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
+
+                        <div class="w3-container-promo w3-display-left">
+
+                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="w3-container-gamedemo2">
+
+                <img class="w3-image-game" src="assets/metalgearR.jpg" alt="GAME"/><div class="w3-container-details w3-display-bottommiddle">
+
+                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
+
+                    <div class="w3-container-price w3-display-middle">
+
+                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
+
+                        <div class="w3-container-promo w3-display-left">
+
+                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="w3-container-gamedemo2">
+
+                <img class="w3-image-game" src="assets/gow.jpg" alt="GAME"/><div class="w3-container-details w3-display-bottommiddle">
+
+                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
+
+                    <div class="w3-container-price w3-display-middle">
+
+                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
+
+                        <div class="w3-container-promo w3-display-left">
+
+                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="w3-container-gamedemo2">
+
+                <img class="w3-image-game" src="assets/hades.png" alt="GAME"/><div class="w3-container-details w3-display-bottommiddle">
+
+                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
+
+                    <div class="w3-container-price w3-display-middle">
+
+                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
+
+                        <div class="w3-container-promo w3-display-left">
+
+                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="w3-container-gamedemo2">
+
+                <img class="w3-image-game" src="assets/katana.avif" alt="GAME"/><div class="w3-container-details w3-display-bottommiddle">
+
+                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
+
+                    <div class="w3-container-price w3-display-middle">
+
+                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
+
+                        <div class="w3-container-promo w3-display-left">
+
+                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="w3-container-gamedemo2">
+
+                <img class="w3-image-game" src="assets/cuphead.jpeg" alt="GAME"/><div class="w3-container-details w3-display-bottommiddle">
+
+                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
+
+                    <div class="w3-container-price w3-display-middle">
+
+                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
+
+                        <div class="w3-container-promo w3-display-left">
+
+                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="w3-container-gamedemo2">
+
+                <img class="w3-image-game" src="assets/Bloodborn.jpg" alt="GAME"/><div class="w3-container-details w3-display-bottommiddle">
+
+                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
+
+                    <div class="w3-container-price w3-display-middle">
+
+                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
+
+                        <div class="w3-container-promo w3-display-left">
+
+                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="w3-container-gamedemo2">
+
+                <img class="w3-image-game" src="assets/celeste.jpg" alt="GAME"/><div class="w3-container-details w3-display-bottommiddle">
+
+                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
+
+                    <div class="w3-container-price w3-display-middle">
+
+                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
+
+                        <div class="w3-container-promo w3-display-left">
+
+                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="w3-container-gamedemo2">
+
+                <img class="w3-image-game" src="assets/hollow.jpg" alt="GAME"/><div class="w3-container-details w3-display-bottommiddle">
+
+                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
+
+                    <div class="w3-container-price w3-display-middle">
+
+                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
+
+                        <div class="w3-container-promo w3-display-left">
+
+                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="w3-container-gamedemo2">
+
+                <img class="w3-image-game" src="assets/formula1.png" alt="GAME"/><div class="w3-container-details w3-display-bottommiddle">
+
+                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
+
+                    <div class="w3-container-price w3-display-middle">
+
+                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
+
+                        <div class="w3-container-promo w3-display-left">
+
+                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="w3-container-gamedemo2">
+
+                <img class="w3-image-game" src="assets/gta5.jpg" alt="GAME"/><div class="w3-container-details w3-display-bottommiddle">
+
+                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
+
+                    <div class="w3-container-price w3-display-middle">
+
+                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
+
+                        <div class="w3-container-promo w3-display-left">
+
+                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="w3-container-gamedemo2">
+
+                <img class="w3-image-game" src="assets/minecraft.jpg" alt="GAME"/><div class="w3-container-details w3-display-bottommiddle">
+
+                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
+
+                    <div class="w3-container-price w3-display-middle">
+
+                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
+
+                        <div class="w3-container-promo w3-display-left">
+
+                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="w3-container-gamedemo2">
+
+                <img class="w3-image-game" src="assets/Phasmophobia.jpg" alt="GAME"/><div class="w3-container-details w3-display-bottommiddle">
+
+                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
+
+                    <div class="w3-container-price w3-display-middle">
+
+                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
+
+                        <div class="w3-container-promo w3-display-left">
+
+                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="w3-container-gamedemo2">
+
+                <img class="w3-image-game" src="assets/metalgearR.jpg" alt="GAME"/><div class="w3-container-details w3-display-bottommiddle">
+
+                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
+
+                    <div class="w3-container-price w3-display-middle">
+
+                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
+
+                        <div class="w3-container-promo w3-display-left">
+
+                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="w3-container-gamedemo2">
+
+                <img class="w3-image-game" src="assets/gow.jpg" alt="GAME"/><div class="w3-container-details w3-display-bottommiddle">
+
+                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
+
+                    <div class="w3-container-price w3-display-middle">
+
+                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
+
+                        <div class="w3-container-promo w3-display-left">
+
+                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="w3-container-gamedemo2">
+
+                <img class="w3-image-game" src="assets/hades.png" alt="GAME"/><div class="w3-container-details w3-display-bottommiddle">
+
+                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
+
+                    <div class="w3-container-price w3-display-middle">
+
+                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
+
+                        <div class="w3-container-promo w3-display-left">
+
+                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="w3-container-gamedemo2">
+
+                <img class="w3-image-game" src="assets/katana.avif" alt="GAME"/><div class="w3-container-details w3-display-bottommiddle">
+
+                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
+
+                    <div class="w3-container-price w3-display-middle">
+
+                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
+
+                        <div class="w3-container-promo w3-display-left">
+
+                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="w3-container-gamedemo2">
+
+                <img class="w3-image-game" src="assets/cuphead.jpeg" alt="GAME"/><div class="w3-container-details w3-display-bottommiddle">
+
+                    <p class="w3-text-gamename w3-display-left">PLACEHOLDER</p>
+
+                    <div class="w3-container-price w3-display-middle">
+
+                        <p class="w3-text-gameprice w3-display-middle"><s>R$55,00</s>R$00,00</p>
+
+                        <div class="w3-container-promo w3-display-left">
+
+                            <p class="w3-text-gamepromo w3-display-topmiddle">-100%</p>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </nav>       
+
+        <br><br><br>
+        
+        <div class="w3-container-coockie w3-display-left" id="coockie">
+            <button class="w3-button-footer w3-display-right" id="btn" type="submit" value="Language" onclick="hidecoockie()">coockie</button> 
+        </div>
+        
+        <footer class="w3-container-footer">
+            <p id="contato">Copyrigth: © 2022 ParrotCloud. <br> 
+            <a class="w3-hypertext" href="parrotcloud_contact.html">Contact Us</a> || <a class="w3-hypertext" href="parrotcloud_about.html">About Us</a> <button class="w3-button-2 w3-display-right" id="btn" type="submit" value="Language" onclick="changeLanguagePt()">Languages</button></p>
         </footer>
 
         <script>
             
+            function hidecoockie(){
+                document.getElementById("coockie").classList.replace('w3-container-coockie','w3-container-coockie-hide');
+            }
             function openSettings(){
                 document.getElementById("hamburguer").innerHTML= "<button id='hamburguer'class='w3-button-hamburguer fa fa-bars w3-xlarge w3-display-left' onclick='closeSettings()'></button>";
                 document.getElementById("tab").classList.replace('w3-container-settings-hide','w3-container-settings-showing');

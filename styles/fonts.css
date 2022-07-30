@@ -7,24 +7,16 @@
 }
 
 @font-face {
-    font-family: 'Digital Arcade';
-    src: url('/assets/fonts/DigitalArcade.ttf')
+    font-family: 'Press Start 2P';
+    src: url('/assets/fonts/PressStart2P.ttf')
     format('truetype');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'Stay Pixel';
-    src: url('/assets/fonts/StayPixel.ttf')
-    format('truetype');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'Future Friends';
-    src: url('/assets/fonts/FutureFriends.ttf')
+    font-family: 'Nunito';
+    src: url('/assets/fonts/Nunito.ttf')
     format('truetype');
     font-weight: normal;
     font-style: normal;

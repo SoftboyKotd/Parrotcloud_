@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="icon" type="imagem/png" href="./assets/icon.png" />
         <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+        <link rel="stylesheet" type="text/css" href="./styles/core.css">
         <link rel="stylesheet" type="text/css" href="./styles/fonts.css">
         
     </head>
@@ -45,7 +46,7 @@
                         <input class="w3-input" type="password" style="width:70%" required name="psw2" placeholder="Confirm Password:">
 
                     </lable>
-                    <p id="termPolicy" class="w3-terms"><input type="checkbox"></input>
+                    <p id="termPolicy" class="w3-text"><input type="checkbox"></input>
 
                         By siging up, you agree to the <a class="w3-hypertext" href="terms_of_use.html">terms of use</a> and<br>our
                         <a class="w3-hypertext" href="privacy-policy.html">privacy policy</a>, including our <a class="w3-hypertext" href="cookie-policy.html">cookie policy</a> 
@@ -57,7 +58,7 @@
 
                     </p>
 
-                    <p id="termSignin" class="w3-terms">You already have an account?<a class="w3-hypertext" href="signin.html"> Sign In!</a>
+                    <p id="termSignin" class="w3-text">You already have an account?<a class="w3-hypertext" href="signin.html"> Sign In!</a>
 
                     </p>
                 </form>
@@ -94,7 +95,7 @@
                 document.getElementById("signup").innerHTML = "<br><input class='w3-input' type='email' style='width:70%' required name='email' placeholder='Email:'><br><input class='w3-input' type='text' style='width:70%' required name='username' placeholder='Nome de Usuário:'><br><input class='w3-input' type='password' style='width:70%' required name='psw1' placeholder='Senha:'><br><input class='w3-input' type='password' style='width:70%' required name='psw2' placeholder='Confirme Senha:'>";
                 document.getElementById("termPolicy").innerHTML = "<input type='checkbox'></input> Por subscrever, você concorda em nossos <a class='w3-hypertext' href='terms_of_use.html'>termos de uso</a>,<br>nossa <a class='w3-hypertext' href='privacy_policy.html'>política de privacidade</a> e nossa <a class='w3-hypertext' href='cookie-policy.html'>política de cookies</a>" ;
                 document.getElementById("btn2").innerHTML = "<button class='w3-button' type='submit' value='subimit'> Subscrever </button>";
-                document.getElementById("termSignin").innerHTML = "<p id='termSignin' class='w3-terms'>Já tem uma conta?<a class='w3-hypertext' href='signin.html'> Entre agora!</a>";
+                document.getElementById("termSignin").innerHTML = "<p id='termSignin' class='w3-text'>Já tem uma conta?<a class='w3-hypertext' href='signin.html'> Entre agora!</a>";
                 document.getElementById("contato").innerHTML = "Copyrigth: © 2022 ParrotCloud. <br> <a class='w3-hypertext' href='parrotcloud_contact.html'>Contacte-nos</a> || <a class='w3-hypertext' href='parrotcloud_about.html'>Sobre Nós</a> <button class='w3-button-footer w3-display-right' id='btn' type='submit' value='Language' onclick='changeLanguageEn()'>Languages</button>";
             } 
 
@@ -104,7 +105,7 @@
                 document.getElementById("signup").innerHTML = "<br><input class='w3-input' type='email' style='width:70%' required name='email' placeholder='Email:'><br><input class='w3-input' type='text' style='width:70%' required name='username' placeholder='Username:'><br><input class='w3-input' type='password' style='width:70%' required name='psw1' placeholder='Password:'><br><input class='w3-input' type='password' style='width:70%' required name='psw2' placeholder='Confirm Password:'>";
                 document.getElementById("termPolicy").innerHTML = "<input type='checkbox'></input> By siging up, you agree to the <a class='w3-hypertext' href='terms_of_use.html'>terms of use</a> and<br>our <a class='w3-hypertext' href='privacy_policy.html'>privacy policy</a>, including our <a class='w3-hypertext' href='cookie-policy.html'>cookie policy</a>" ;
                 document.getElementById("btn2").innerHTML = "<button class='w3-button' type='submit' value='subimit'> Sign Up </button>";
-                document.getElementById("termSignin").innerHTML = "<p id='termSignin' class='w3-terms'>You already have an account?<a class='w3-hypertext' href='signin.html'> Sign In!</a>";
+                document.getElementById("termSignin").innerHTML = "<p id='termSignin' class='w3-text'>You already have an account?<a class='w3-hypertext' href='signin.html'> Sign In!</a>";
                 document.getElementById("contato").innerHTML = "Copyrigth: © 2022 ParrotCloud. <br> <a class='w3-hypertext' href='parrotcloud_contact.html'>Contact Us</a> || <a class='w3-hypertext' href='parrotcloud_about.html'>About Us</a> <button class='w3-button-footer w3-display-right' id='btn' type='submit' value='Language' onclick='changeLanguagePt()'>Language</button>";
             } 
         </script>

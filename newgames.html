@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+        <title>ParrotCloud_</title>
+
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="refresh" content="300">
+
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="icon" type="imagem/png" href="./assets/icon.png" />
+        <link rel="stylesheet" type="text/css" href="./styles/styles.css">
+        <link rel="stylesheet" type="text/css" href="./styles/core.css">
+        <link rel="stylesheet" type="text/css" href="./styles/fonts.css">
+
+    </head>
+    <body>
+        <header id="header">
+
+            <div class="dropdown">
+
+                <button class="w3-button-hamburguer fa fa-bars w3-xlarge w3-display-left" onclick="openSettings()"></button>        
+                </div>
+            </div>
+
+            <br><br>
+
+            <table class="wrapper">
+
+                <span>
+
+                    <form class="search" name="search" id="search" method="POST">
+
+                        <input class="w3-input-searchbar w3-display-middle w3-auto" type="search" style="width:45%" required name="search" placeholder="Search:">
+
+                    </form>
+
+                </span>
+
+                <br>
+
+                <div class="w3-container-user w3-display-right">
+                    <p class="w3-text-profile">user_name</p>
+                    <a href="your_profile.html">
+    
+                        <img class="w3-image-profile w3-display-topright" src="assets/user_icon.jpg" alt="YOU"/>
+    
+                    </a>
+                </div>
+            </table>
+            
+            <span class="pages">
+
+                <div class="w3-container-pages w3-display">
+
+                    <div class="w3-text-pages">Realeses</div>
+
+                </div>
+                <div class="w3-container-pages">
+
+                    <div class="w3-text-pages">Community</div>
+
+                </div>
+                <div class="w3-container-pages w3-display">
+
+                    <div class="w3-text-pages">News</div>
+
+                </div>
+                <div class="w3-container-pages w3-display">
+
+                    <div class="w3-text-pages">Trending</div>
+
+                </div>
+                <div class="w3-container-pages w3-display">
+
+                    <div class="w3-text-pages">Explore</div>
+
+                </div>
+                <div class="w3-container-pages w3-display">
+
+                    <div class="w3-text-pages">More</div>
+
+                </div>
+
+            </span>
+        </header>
+
+        <footer>
+            <p id="contato" class="footer-text">Copyrigth: © 2022 ParrotCloud. <br> 
+            <a class="w3-hypertext" href="parrotcloud_contact.html">Contact Us</a> || <a class="w3-hypertext" href="parrotcloud_about.html">About Us</a> <button class="w3-button-footer w3-display-right" id="btn" type="submit" value="Language" onclick="changeLanguagePt()">Languages</button></p>
+        </footer>
+
+        <script>
+            
+            function openSettings(){
+                document.getElementById("hamburguer").innerHTML= "<button id='hamburguer'class='w3-button-hamburguer fa fa-bars w3-xlarge w3-display-left' onclick='closeSettings()'></button>";
+                document.getElementById("tab").classList.replace('w3-container-settings-hide','w3-container-settings-showing');
+            }
+
+            function closeSettings(){
+                document.getElementById("hamburguer").innerHTML= "<button id='hamburguer'class='w3-button-hamburguer fa fa-bars w3-xlarge w3-display-left' onclick='openSettings()'></button>";
+                document.getElementById("tab").classList.replace('w3-container-settings-showing','w3-container-settings-hide');           
+            }
+
+            var modal = document.getElementById("myModal");
+
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+            modal.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+            modal.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+                }
+            }
+
+            function changeLanguagePt(){
+                document.getElementById("search").placeholder=" Procurar:";
+                document.getElementById("contato").innerHTML = "Copyrigth: © 2022 ParrotCloud. <br> <a class='w3-hypertext' href='parrotcloud_contact.html'>Contacte-nos</a> || <a class='w3-hypertext' href='parrotcloud_about.html'>Sobre Nós</a> <button class='w3-button-footer w3-display-right' id='btn' type='submit' value='Language' onclick='changeLanguageEn()'>Languages</button>";
+            }
+
+            function changeLanguageEn(){
+                document.getElementById("search").placeholder=" Search:";
+                document.getElementById("contato").innerHTML = "Copyrigth: © 2022 ParrotCloud. <br> <a class='w3-hypertext' href='parrotcloud_contact.html'>Contact Us</a> || <a class='w3-hypertext' href='parrotcloud_about.html'>About Us</a> <button class='w3-button-footer w3-display-right' id='btn' type='submit' value='Language' onclick='changeLanguagePt()'>Languages</button>";
+            } 
+        </script>
+    </body>
+</html>

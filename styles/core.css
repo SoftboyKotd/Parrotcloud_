@@ -1,0 +1,284 @@
+/* Body style */
+
+body, html {
+    background-color: #111111;
+    color: white;
+}
+
+/* Header style*/
+
+header {  
+    position: fixed;
+    left: 0;
+    margin-top: -2rem;
+    height: 150px;
+    width: 100%;
+    background-color: #1b1b1b;
+    box-shadow: 0.5rem 0.5rem 0.5rem #0a0a0a;
+    color: white;
+    z-index: 4;
+    animation: showinhe 3s normal;
+}
+
+@keyframes showinhe {
+    from {margin-top: -10rem;}
+    to {margin-top: -2rem;}
+}
+
+form.search {
+    margin-bottom: 2rem;
+    z-index: 1;
+}
+
+input.w3-input-searchbar {
+    background-color: #444444;
+    color:white;
+    border-radius: 1.875rem 1.875rem 1.875rem 1.875rem; 
+    width: 0.313rem;
+    height: 1.875rem;
+    outline: none;
+    transition: 300ms;
+    border: 0rem;
+}
+
+input.w3-input-searchbar::placeholder {
+    padding: 1.125rem;
+    font-size: 0.938rem;
+    font-family: 'Press Start 2P';
+}
+
+input.w3-input-searchbar:hover {
+    cursor: pointer;
+    background-color: #666565;
+}
+
+button.w3-button-hamburguer {
+    float: top;
+    background-color: #1b1b1b;
+    color: #ffffff;
+    border: none;
+    margin-left: 1.5rem;
+    opacity: 0.7;
+    transition: 43.75ms;
+}
+
+button.w3-button-hamburguer:hover {
+    cursor: pointer;
+    opacity: 1.0;
+}
+
+div.w3-container-pages {
+    overflow: hidden;
+    min-width: 6rem;
+    max-width: 10rem;
+    flex-wrap: wrap;
+    float: left;
+    padding-bottom: 1.3rem;
+    width: 8.5%;
+    background-color: #1b1b1b;
+    transition: 200ms;
+    z-index: 4;
+}
+
+@media (max-width: 10rem) {
+    div.w3-container-pages {
+        display: block;
+    }
+}
+
+div.w3-container-pages:hover {
+    cursor: pointer;
+    background-color: #111111;
+}
+
+div.w3-text-pages {
+    padding-top: 1rem;
+    text-align: center;
+    font-family: 'Frijole';
+    font-size: 12px;
+    opacity: 0.75;
+    transition: 300ms;
+
+}
+
+div.w3-container-pages:hover div.w3-text-pages {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+a.w3-hypertext {
+    text-decoration: none;
+    color: #69d300;
+    font-family: 'Press Start 2P';
+    font-size: 0.625rem;
+    transition: 300ms;
+}
+
+a.w3-hypertext:hover {
+    cursor: pointer;
+    color: #ffffff;
+}
+
+a.w3-hypertext-blink {
+    text-decoration: none;
+    color: #69d300;
+    font-family: 'Press Start 2P';
+    font-size: 0.625rem;
+    animation: blink 0.5s infinite;
+    transition: 300ms;
+
+}
+
+a.w3-hypertext-blink:hover {
+    cursor: pointer;
+    color: #ffffff;
+}
+
+@keyframes blink {
+    50%   {
+        color: white;
+    }
+    
+  }
+
+p.w3-text-profile {
+    visibility: visible;
+    float: right;
+    margin-right: 4rem;
+    font-family: 'Press Start 2P';
+    transition: 300ms;
+    z-index: 5;
+}
+
+p.w3-text-profile:hover {
+    cursor: pointer;
+    color: #69d300;
+    z-index: 5;
+}
+
+img.w3-image-profile {
+    visibility: visible;
+    float: left;
+    max-width: 3.125rem;
+    max-height: 3.125rem;
+    opacity: 0.7;
+    transition: 300ms;
+}
+
+img.w3-image-profile:hover {
+    cursor: pointer;
+    opacity: 1.0;
+}
+
+div.w3-container-user {
+    display: hidden;
+    margin-right: 2rem;
+    width: 200px;
+    height: 48px;
+    z-index: 1;
+}
+
+/*misc style*/
+
+p.w3-text {
+    color:white;
+    font-family: 'Nunito';
+}
+
+button.w3-button {
+    height: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    background-color: #69d300;
+    transition: 300ms;
+    z-index: 2;
+}
+
+button.w3-button:hover {
+    cursor: pointer;
+    color: #3c7603;
+}
+
+button.w3-button-2 {
+    position: absolute;
+    height: 2rem;
+    margin-right: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    transition-duration: 1s;
+    background-color: #c4c4c4;
+    color: #000000;
+}
+
+button.w3-button-2:hover {
+    background-color: #262424;
+    color: white;
+}
+
+a.w3-hypertext {
+    text-decoration: none;
+    color: #69d300;
+    font-family: 'Press Start 2P';
+    font-size: 0.625rem;
+    transition: 300ms;
+}
+
+a.w3-hypertext:hover {
+    cursor: pointer;
+    color: #ffffff;
+}
+
+input.w3-input {
+    width: 3.125rem;
+    height: 3.125rem;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    border: none;
+    background-color: #696969;
+    color:white;
+}
+
+input.w3-input::placeholder {
+    color:white;
+    font-family: 'Nunito';
+}
+
+/*Footer style*/
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #1b1b1b;
+    color: white;
+    font-size: 0.5rem;
+    box-shadow:0.5rem 0.5rem 0.5rem 0.75rem #141414;
+    text-align: center;
+    animation: showinfo 3s normal;
+    z-index: 4;
+}
+
+@keyframes showinfo {
+    from {margin-bottom: -10rem;}
+    to {margin-bottom: 0rem;}
+}
+
+button.w3-button-footer {
+    position: absolute;
+    height: 2rem;
+    margin-right: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    background-color: #c4c4c4;
+    color: #000000;
+}
+
+button.w3-button-footer:hover {
+    background-color: #262424;
+    color: white;
+}
